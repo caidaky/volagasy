@@ -10,6 +10,21 @@
   <div id="resultat">Chargement...</div>
 
   <script>
+    
+const url = "https://data.fixer.io/api/latest?access_key={PASTE_YOUR_API_KEY_HERE}&base=USD";
+const options = {
+    method: "GET",
+};
+
+try {
+    const response = await fetch(url, options);
+    const result = await response.text();
+    console.log(result);
+  document.getElementById('resultat').innerHTML = result;
+} catch (error) {
+    console.error(error);
+}
+    /*
     const API_URL = 'http://data.fixer.io/api/';
     const API_KEY = '03b42d0cc6bf1eec16099bc2add0c7ed';
 
@@ -31,6 +46,7 @@
       console.error('Erreur :', error);
       document.getElementById('resultat').innerText = 'Erreur de chargement';
     });
+    */
   </script>
 </body>
 </html>
