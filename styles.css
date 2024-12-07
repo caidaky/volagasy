@@ -1,0 +1,252 @@
+/* Réinitialisation basique */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+
+}
+.logo {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  font-style: normal;
+}
+#logot {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  font-style: normal;
+}
+/* En-tête avec boutons de navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  
+}
+ .logo-container {
+      text-align: center;
+    }
+
+    svg {
+      max-width: 10%;
+      height: auto;
+    }
+#imgl{
+
+  width:100px;
+   display: block;        /* Fait de l'image un élément de type bloc */
+      margin-left: auto;     /* Définit la marge gauche automatique */
+      margin-right: auto;
+}
+#airtel{
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+#orange-cont{
+  background-color: #1A1A1A;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+#telma-cont{
+  background-color: #FFDE00 ;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+#payeer{
+  background-color: #FFF ;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+#faucetpay{         
+  background-color: #000 ;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+  }
+#perfectmoney{
+  background-color: #FFF ;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+#paypal{
+  background-color: #FFF ;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+.profile-btn, .menu-btn {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 16px;
+  background-color: #0056b3;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover, .menu-btn:hover {
+  background-color: #003f7f;
+}
+
+/* Section principale */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style pour les deux divs */
+.section {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#mobile-to-crypto {
+  background-color: #e0f7fa;
+
+}
+
+#crypto-to-mobile {
+  background-color: #f1f8e9;
+}
+#crypto{
+
+}
+
+/* Conteneur pour les images */
+.image-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.image-links2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+  grid-template-rows: repeat(2, 1fr); /* 2 lignes égales */
+  gap: 10px; /* Espace entre les éléments */
+  margin-top: 20px;
+  width: 100%; /* S'assurer que la largeur est de 100% du conteneur */
+  
+}
+
+.image-links2 > div {
+  width: 100%; /* Prendre toute la largeur de la cellule */
+  height: 0; /* La hauteur initiale est 0 */
+  padding-top: 100%; /* Utiliser padding-top pour forcer la hauteur égale à la largeur (aspect ratio 1:1) */
+  background-color: lightblue; /* Exemple de style */
+}
+
+.image-container {
+  position: relative;
+  width: 30%;
+  height: 30vmin;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+/* Mise en page réactive */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section {
+    width: 48%;
+  }
+
+  .image-links {
+    flex-direction: row;
+  }
+}
+
+/* Footer avec informations de contact */
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+
+
+
+    .list-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .list-group-item {
+      background-color: #fff;
+      border: 1px solid #dee2e6;
+      padding: 10px 20px;
+      border-radius: 0.25rem;
+      font-size: 16px;
+      text-align: center;
+      color: #495057;
+      transition: all 0.3s ease;
+    }
+
+    .list-group-item:hover {
+      background-color: #e9ecef;
+      border-color: #adb5bd;
+      color: #212529;
+      transform: scale(1.02);
+    }
+
+
+ a {
+      text-decoration: none; /* Supprime le soulignement */
+      color: #FFF; /* Couleur de lien par défaut */
+    }
+
+    a:hover {
+      text-decoration: underline; /* Facultatif : soulignement au survol */
+      color: #0056b3; /* Changer la couleur au survol */
+    }
+.aa{
+    color: #007bff;
+    position: absolute;
+    bottom: 100; /* Fixé en bas */
+    left: 0;
+    right: 0; /* Pour occuper toute la largeur */
+    text-align: center;
+    font-size: 8px;
+ }
+.an{
+  color: #000;
+}
+
+
