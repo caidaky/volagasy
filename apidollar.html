@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taux de change en temps réel</title>
+</head>
+<body>
+  <h1>Taux de change</h1>
+  <div id="resultat">Chargement...</div>
+
+  <script>
+    const API_URL = 'https://api.apilayer.com/fixer/latest';
+    const API_KEY = '03b42d0cc6bf1eec16099bc2add0c7ed';
+
+    fetch(`${API_URL}?base=USD&symbols=EUR,MGF`, {
+      headers: {
+        'apikey': API_KEY
+      }
+    })
+    .then(response => response.json())
+    .then(data => {
+      const tauxEUR = data.rates.EUR;
+      const tauxMGF = data.rates.MGF;
+      document.getElementById('resultat').innerHTML = `
+        1 USD = ${tauxEUR} EUR <br>
+        1 USD = ${tauxMGF} MGF
+      `;
+    })
+    .catch(error => {
+      console.error('Erreur :', error);
+      document.getElementById('resultat').innerText = 'Erreur de chargement';
+    });
+  </script>
+</body>
+</html>
