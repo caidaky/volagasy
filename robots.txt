@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://caidaky.github.io/volagasy/sitemap_4462227.xml
