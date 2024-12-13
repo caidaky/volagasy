@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>À propos de nous</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -20,6 +25,7 @@
     }
 
     .container {
+      display: flex;
       padding: 2rem;
       max-width: 1200px;
       margin: 0 auto;
@@ -27,6 +33,8 @@
 
     .section {
       margin-bottom: 2rem;
+      width:100%;
+      max-width: 100%;
     }
 
     h1, h2 {
@@ -38,11 +46,12 @@
       padding: 0;
     }
 
-    ul li {
+    ul .li {
       background: #f4f4f4;
       margin: 0.5rem 0;
       padding: 1rem;
       border-left: 4px solid #4CAF50;
+      text-align: left;
     }
 
     .team {
@@ -80,9 +89,57 @@
 </head>
 <body>
   <header>
+
+ <div class="menu-btn">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <div class="container-fluid">
+         <a class="navbar-brand" href="#">      
+          <div class="logo">VOLAGASY
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false">
+                Menu Déroulant
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                <li><a class="dropdown-item" href="#">Action 2</a></li>
+                <li><a class="dropdown-item" href="#">Autre Action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"    aria-expanded="false">
+                Contact
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li> <a class="an" href="tel:+261387093302">+261 38 70 933 02 </a><br></li>
+                <li> <a class="an" href="tel:+261387093302">+261 33 95 784 92 </a><br></li>
+                <li> <a class="an" href="tel:+261387093302">+261 32 70 933 02 </a><br></li>
+                <li><a class="an" href="mailto:francqui.raelison@gmail.com?subject=Demande d'informations&body=Bonjour,">francqui.raelison@gmail.com </a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </div>
+
     <h1>À propos de nous</h1>
+    <h1></h1><h1></h1><h1></h1>
   </header>
-  <main class="container">
+ 
     <section class="section">
       <h2>Qui sommes-nous ?</h2>
       <p>Nous sommes une entreprise en pleine croissance située à Madagascar, dédiée à faciliter la vie des personnes à travers l'utilisation des crypto-monnaies. Nous croyons fermement que la technologie blockchain et les crypto-monnaies peuvent transformer les finances personnelles et offrir de nouvelles opportunités, en particulier dans des régions où l'accès aux services financiers traditionnels est limité.</p>
@@ -98,10 +155,10 @@
     <section class="section">
       <h2>Pourquoi nous choisir ?</h2>
       <ul>
-        <li><strong>Accessibilité :</strong> Nous avons conçu notre plateforme pour qu'elle soit simple d’utilisation, même pour les débutants dans le monde des crypto-monnaies.</li>
-        <li><strong>Sécurité :</strong> Nous mettons la sécurité de vos fonds et de vos transactions au cœur de notre entreprise, en utilisant les meilleures pratiques du secteur.</li>
-        <li><strong>Rapidité :</strong> Nos transactions sont traitées rapidement, grâce à l'intégration avec les services de mobile money populaires à Madagascar.</li>
-        <li><strong>Support client :</strong> Notre équipe est disponible pour répondre à toutes vos questions, 24/7.</li>
+        <li class="li"><strong>Accessibilité :</strong> Nous avons conçu notre plateforme pour qu'elle soit simple d’utilisation, même pour les débutants dans le monde des crypto-monnaies.</li>
+        <li class="li"><strong>Sécurité :</strong> Nous mettons la sécurité de vos fonds et de vos transactions au cœur de notre entreprise, en utilisant les meilleures pratiques du secteur.</li>
+        <li class="li"><strong>Rapidité :</strong> Nos transactions sont traitées rapidement, grâce à l'intégration avec les services de mobile money populaires à Madagascar.</li>
+        <li class="li"><strong>Support client :</strong> Notre équipe est disponible pour répondre à toutes vos questions, 24/7.</li>
       </ul>
     </section>
     <section class="section">
@@ -113,15 +170,15 @@
         </div>
         <div class="team-member">
           <h3>Caida</h3>
-          <p>Développeur en crypto-monnaies</p>
+          <p>Développeur</p>
         </div>
         <div class="team-member">
-          <h3>Rosanah</h3>
+          <h3>Rosana</h3>
           <p>Spécialiste en finances numériques</p>
         </div>
       </div>
     </section>
-  </main>
+  
   <footer>
     <p>&copy; 2024 volagasy.com. Tous droits réservés.</p>
   </footer>
