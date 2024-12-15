@@ -1,4 +1,18 @@
 /* Réinitialisation basique */
+#volagasy{
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+  border: 2px solid #FFF;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 10vmin;
+  border-radius: 100%;
+}
+#v{
+  text-align: center;
+}
 * {
   margin: 0;
   padding: 0;
@@ -33,20 +47,20 @@ header {
   color: white;
   
 }
- .logo-container {
-      text-align: center;
-    }
+.logo-container {
+  text-align: center;
+}
 
-    svg {
-      max-width: 10%;
-      height: auto;
-    }
+svg {
+  max-width: 10%;
+  height: auto;
+}
 #imgl{
 
   width:100px;
-   display: block;        /* Fait de l'image un élément de type bloc */
-      margin-left: auto;     /* Définit la marge gauche automatique */
-      margin-right: auto;
+  display: block;        /* Fait de l'image un élément de type bloc */
+  margin-left: auto;     /* Définit la marge gauche automatique */
+  margin-right: auto;
 }
 #airtel{
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
@@ -66,9 +80,9 @@ header {
 #faucetpay{         
   background-color: #000 ;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
-  }
-#perfectmoney{
-  background-color: #FFF ;
+}
+#redotpay{
+  background-color: #e31a35 ;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Ombre */
 }
 #paypal{
@@ -198,53 +212,53 @@ footer {
 
 
 
-    .list-group {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      width: 100%;
-      max-width: 100%;
-      padding: 0;
-      margin: 0;
-    }
+.list-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
-    .list-group-item {
-      background-color: #fff;
-      border: 1px solid #dee2e6;
-      padding: 10px 20px;
-      border-radius: 0.25rem;
-      font-size: 16px;
-      text-align: center;
-      color: #495057;
-      transition: all 0.3s ease;
-    }
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  font-size: 16px;
+  text-align: center;
+  color: #495057;
+  transition: all 0.3s ease;
+}
 
-    .list-group-item:hover {
-      background-color: #e9ecef;
-      border-color: #adb5bd;
-      color: #212529;
-      transform: scale(1.02);
-    }
+.list-group-item:hover {
+  background-color: #e9ecef;
+  border-color: #adb5bd;
+  color: #212529;
+  transform: scale(1.02);
+}
 
 
- a {
-      text-decoration: none; /* Supprime le soulignement */
-      color: #FFF; /* Couleur de lien par défaut */
-    }
+a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: #FFF; /* Couleur de lien par défaut */
+}
 
-    a:hover {
-      text-decoration: underline; /* Facultatif : soulignement au survol */
-      color: #0056b3; /* Changer la couleur au survol */
-    }
+a:hover {
+  text-decoration: underline; /* Facultatif : soulignement au survol */
+  color: #0056b3; /* Changer la couleur au survol */
+}
 .aa{
-    color: #007bff;
-    position: absolute;
-    bottom: 100; /* Fixé en bas */
-    left: 0;
-    right: 0; /* Pour occuper toute la largeur */
-    text-align: center;
-    font-size: 8px;
- }
+  color: #007bff;
+  position: absolute;
+  bottom: 100; /* Fixé en bas */
+  left: 0;
+  right: 0; /* Pour occuper toute la largeur */
+  text-align: center;
+  font-size: 8px;
+}
 .an{
   color: #000;
 }
